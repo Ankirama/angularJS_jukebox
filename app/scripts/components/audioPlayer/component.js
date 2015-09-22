@@ -11,12 +11,12 @@ angular.module('audioPlayer-directive', [])
                 $scope.next = function(){ $rootScope.$broadcast('audio.next'); };
                 $scope.prev = function(){ $rootScope.$broadcast('audio.prev'); };
 
-		// change volume and track position
-		$scope.volume = 1;
+                // change volume and track position
+                $scope.volume = 1;
 
-		$scope.changeVolume = function(event) {
-		    $scope.audio.volume = $scope.volume;
-		};
+                $scope.changeVolume = function(event) {
+                    $scope.audio.volume = $scope.volume;
+                };
 
                 // tell audio element to play/pause, you can also use $scope.audio.play() or $scope.audio.pause();
                 $scope.playpause = function(){ var a = $scope.audio.paused ? $scope.audio.play() : $scope.audio.pause(); };
