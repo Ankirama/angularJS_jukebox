@@ -1,0 +1,19 @@
+<header class="jumbotron">
+  <h1>Keygen jukebox</h1>
+  <p class="lead">
+    <img src="images/keygen.png" alt="Keygen jukebox" width="50" height="auto"><br>
+    <audio-player></audio-player>
+  </p>
+</header>
+
+<ul class="meow">
+  <li ng-repeat="item in data" title="{{item.artist}} - {{item.name}}" data-file="{{item.filename}}" ng-click="chooseTrack($index)">
+    <div style="cursor:pointer">
+    {{item.name}}
+    </div>
+  </li>
+</ul>
+
+<footer class="footer">
+  <p>Thanks to <a href="https://github.com/konsumer/music_player" target="_blank">konsumer</a> for this source project</p>
+</footer>
