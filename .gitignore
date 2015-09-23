@@ -5,3 +5,5 @@ dist
 .sass-cache
 app/bower_components
 app/assets/
+npm-debug.log
+npm-debug.log
